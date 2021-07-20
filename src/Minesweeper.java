@@ -130,8 +130,11 @@ public class Minesweeper {
             try{
                 field.checkCoordinates(x,y);
             }catch(ValueException e){
+                x=-1;
+                y=-1;
                 System.out.println();
                 System.out.println("Invalid input - you are outside the playing field");
+
             }
         }
     }
